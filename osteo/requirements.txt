@@ -7,3 +7,4 @@ tensorflow
 pillow
 requests
 opencv-python-headless
+fpdf
