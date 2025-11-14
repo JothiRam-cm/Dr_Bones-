@@ -10,7 +10,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parents[2]
 
 # Prefer the model shipped inside `DrBones_app/models`, fall back to top-level `models`
-MODEL_PATH = 'Dr_Bones-\osteo\models\DrBones.h5'
+MODEL_PATH = '/mount/src/dr_bones-/osteo/models/DrBones.h5'
 
 
 # Load the trained MobileNet model using a relative path
@@ -162,8 +162,8 @@ def main():
     if page == "Landing Page":
         st.title("Bone Health Detection By Dr.Bones")
         # Set the image path for the logo (use project-relative paths)
-        logo_url = 'Dr_Bones-/osteo/Asserts/bone-logo.png'
-        image_url = 'Dr_Bones-/osteo/Asserts/health-quotes.jpg'
+        logo_url = '/mount/src/dr_bones-/osteo/Asserts/bone-logo.png'
+        image_url = '/mount/src/dr_bones-/osteo/Asserts/health-quotes.jpg'
         st.logo(logo_url, link=None, icon_image=logo_url)
         st.image(image_url, width=670)
         st.write("Welcome to the Bone Health Detection app. Please navigate to the Upload Data page to begin.")
